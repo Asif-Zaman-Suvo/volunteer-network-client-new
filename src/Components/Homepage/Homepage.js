@@ -1,10 +1,25 @@
 import React from 'react';
+import Header from '../Header/Header';
+import MenuBar from '../MenuBar/MenuBar';
+import './Homepage.css';
 
 const Homepage = () => {
     return (
-        <div>
+        <section className='background'>
+
+            <div className='image-overlay'>
+
+           
+
+            </div>
+            <MenuBar></MenuBar>
+            <Header></Header>
+
             
-        </div>
+
+
+
+        </section>
     );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 
 import {
@@ -9,14 +10,14 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import MenuBar from "./Components/MenuBar/MenuBar";
+import Homepage from "./Components/Homepage/Homepage";
 
 function App() {
   return (
     <Router>
       <Switch>
       <Route exact path="/">
-        <MenuBar></MenuBar>
+       <Homepage></Homepage>
         
         
 
