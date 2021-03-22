@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Homepage from "./Components/Homepage/Homepage";
+import Homepage2 from "./Components/Homepage2/Homepage2";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Switch>
       <Route exact path="/">
        <Homepage></Homepage>
+       <Homepage2></Homepage2>
         
         
 

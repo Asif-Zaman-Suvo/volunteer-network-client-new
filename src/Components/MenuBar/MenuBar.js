@@ -5,7 +5,7 @@ import './MenuBar.css';
 
 const MenuBar = () => {
     return (
-        <Container className=''>
+        <Container>
             <Navbar collapseOnSelect expand="md" bg="transparent" variant="light">
                 <Navbar.Brand href="#home">
                     <img className='logo' style={{ width: '202.81px', height: '60px' }} src={logo} alt="" />

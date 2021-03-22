@@ -8,16 +8,9 @@ const Homepage = () => {
         <section className='background'>
 
             <div className='image-overlay'>
-
-           
-
             </div>
             <MenuBar></MenuBar>
             <Header></Header>
-
-            
-
-
 
         </section>
     );
