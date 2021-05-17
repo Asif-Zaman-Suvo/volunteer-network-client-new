@@ -1,5 +1,4 @@
 import React from 'react';
-import './Homepage2.css';
 import fakeData from '../../fakeData/fakeData';
 import CardService from '../CardService/CardService';
 

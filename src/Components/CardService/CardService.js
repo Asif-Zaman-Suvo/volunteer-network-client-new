@@ -1,17 +1,20 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const CardService = ({ service }) => {
 
     return (
 
         <div className="col-md-3 pt-5">
-            <Card style={{ width: '15em' }}>
-                <Card.Img variant="top" style={{ height: '18em' }} src={service.img} />
-                <Card.Body style={{ backgroundColor: '#CCBB0F' }}>
-                    <h6 className="text-center">{service.name}</h6>
-                </Card.Body>
-            </Card>
+            <Link style={{ textDecoration: 'none' }} to='/register'>
+                <Card style={{ width: '15em' }}>
+                    <Card.Img variant="top" style={{ height: '18em',borderRadius:'none' }} src={service.img} />
+                    <Card.Body className="text-center" style={{ backgroundColor: '#CCBB0F' }}>
+                        <h6 className="text-dark">{service.name}</h6>
+                    </Card.Body>
+                </Card>
+            </Link>
 
         </div>
 
