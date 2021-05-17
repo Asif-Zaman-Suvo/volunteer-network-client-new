@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Nav, Navbar, Button, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import logo from "../../logos/Group 1329.png"
 import './MenuBar.css';
 
@@ -20,8 +21,8 @@ const MenuBar = () => {
 
                     </Nav>
                     <Form>
-                        <Button variant="primary ml-5 mr-3">Register</Button>
-                        <Button variant="dark">Admin</Button>
+                        <Link to="/register"><Button variant="primary ml-5 mr-3">Register</Button></Link>
+                      <Link to="/adminPanel"><Button variant="dark">Admin</Button></Link>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>
