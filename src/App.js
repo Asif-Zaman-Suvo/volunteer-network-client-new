@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  
+
 } from "react-router-dom";
 import './App.css';
 import Homepage from "./Components/Homepage/Homepage";
@@ -23,12 +23,14 @@ function App() {
   return (
 
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+     
       <Router>
         <Switch>
           <Route exact path="/">
             <Homepage></Homepage>
             <Homepage2></Homepage2>
           </Route>
+
 
           <PrivateRoute path="/register">
             <Register></Register>
@@ -44,7 +46,6 @@ function App() {
             <Login></Login>
 
           </Route>
-
 
         </Switch>
       </Router>
