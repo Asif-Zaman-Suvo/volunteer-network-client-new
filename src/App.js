@@ -11,9 +11,9 @@ import './App.css';
 import Homepage from "./Components/Homepage/Homepage";
 import Homepage2 from "./Components/Homepage2/Homepage2";
 import PrivateRoute from "./Components/LoginPage/privateRoute";
-import Register from "./Components/RegisterPage/Register";
 import Admin from "./Components/Admin/Admin";
 import Login from "./Components/LoginPage/Login";
+import RegisterPage from "./Components/RegisterPage/RegisterPage";
 
 export const UserContext = createContext();
 
@@ -33,7 +33,7 @@ function App() {
 
 
           <PrivateRoute path="/register">
-            <Register></Register>
+            <RegisterPage></RegisterPage>
 
           </PrivateRoute>
 

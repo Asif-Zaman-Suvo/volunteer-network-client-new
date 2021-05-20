@@ -77,17 +77,17 @@ const Login = () => {
             <div className="row mt-5">
                 <div className="col-md-3"></div>
                 <div className='col-md-6 mt-3' style={{ width: '550px', height: '350px', border: '2px solid lightgrey' }}>
-                    <h2 className="text-dark mt-5">Login With</h2>
+                    <h2 style={{fontFamily:'Montserrat',fontWeight:'700px'}} className="text-dark mt-5 pt-5">Login With</h2>
 
                     <div className='p-3'>
-                        <button onClick={handleSignIn} className=" btn btn-light border rounded-pill btn-lg btn-block">
-                            <img src={googleLogo} alt="" width="30px" className="mb-1 float-left" />
-                            <h6>Continue With Google</h6>
+                        <button onClick={handleSignIn} className="mt-1 btn btn-light border rounded-pill btn-lg btn-block btn btn-outline-secondary">
+                            <img src={googleLogo} alt="" width="30px" className=" float-left" />
+                            <h6 className='text-dark'>Continue With Google</h6>
                         </button>
-                        <button className=" btn btn-light border rounded-pill btn-lg btn-block">
+                        {/* <button className=" btn btn-light border rounded-pill btn-lg btn-block">
                             <img src={facebookLogo} alt="" width="28px" height="28px" className="mb-1 float-left" />
                             <h6>Continue With Facebook</h6>
-                        </button>
+                        </button> */}
 
                     </div>
 
