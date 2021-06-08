@@ -1,10 +1,13 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import logo from "../../logos/Group 1329.png"
 import "./RegisterPage.css";
 
 const RegisterPage = () => {
+
+    let {serviceName}=useParams();
+
     const {
         register,
         formState: { errors },
@@ -86,6 +89,8 @@ const RegisterPage = () => {
                                     required: "this is a required",
                                     
                                 })}
+
+                                defaultValue={serviceName}
                             />
                            
                         </div>
