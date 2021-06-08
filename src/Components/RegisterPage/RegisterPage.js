@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from "react-hook-form";
 import { Link, useParams } from 'react-router-dom';
+import { UserContext } from '../../App';
 import logo from "../../logos/Group 1329.png"
 import "./RegisterPage.css";
 
 const RegisterPage = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     let {serviceName}=useParams();
 
@@ -46,6 +48,7 @@ const RegisterPage = () => {
                                         message: "Max length is 25"
                                     }
                                 })}
+                                defaultValue={loggedInUser.name}
                             />
                            
                         </div>
@@ -57,6 +60,7 @@ const RegisterPage = () => {
                                     required: "this is required",
                                    
                                 })}
+                                defaultValue={loggedInUser.email}
                             />
                           
                         </div>

@@ -32,10 +32,10 @@ function App() {
           </Route>
 
 
-          <Route path="/register/:serviceName">
+          <PrivateRoute path="/register/:serviceName">
             <RegisterPage></RegisterPage>
 
-          </Route>
+          </PrivateRoute>
 
           <PrivateRoute path="/adminPanel">
 

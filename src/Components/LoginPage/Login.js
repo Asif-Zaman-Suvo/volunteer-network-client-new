@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import logo from '../../logos/Group 1329.png';
 import googleLogo from '../../logos/googleLogo.png';
-import facebookLogo from '../../logos/FbLogo2.png';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.Config';
